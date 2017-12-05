@@ -45,7 +45,7 @@
   (tru "Search base for users. (Will be searched recursively)"))
 
 (defsetting ldap-user-filter
-  (tru "User lookup filter, the placeholder {login} will be replaced by the user supplied login.")
+  (tru "User lookup filter, the placeholder '{login}' will be replaced by the user supplied login.")
   :default "(&(objectClass=inetOrgPerson)(|(uid={login})(mail={login})))")
 
 (defsetting ldap-attribute-email
